@@ -24,7 +24,7 @@
 - [Gateway - Quickstart](https://raw.githubusercontent.com/mozilla-ai/any-llm/refs/heads/main/docs/src/content/docs/gateway/quickstart.md): image: ghcr.io/mozilla-ai/any-llm/gateway:latest
 - [Gateway - Authentication](https://raw.githubusercontent.com/mozilla-ai/any-llm/refs/heads/main/docs/src/content/docs/gateway/authentication.md)
 - [Gateway - Budget Management](https://raw.githubusercontent.com/mozilla-ai/any-llm/refs/heads/main/docs/src/content/docs/gateway/budget-management.md): curl -X POST http://localhost:8000/v1/budgets \
-- [Gateway - Configuration](https://raw.githubusercontent.com/mozilla-ai/any-llm/refs/heads/main/docs/src/content/docs/gateway/configuration.md): credentials: "/path/to/service_account.json"  # File path, JSON string, or dict
+- [Gateway - Configuration](https://raw.githubusercontent.com/mozilla-ai/any-llm/refs/heads/main/docs/src/content/docs/gateway/configuration.md): input_price_per_million: 0.15
 - [Gateway - Api Reference](https://raw.githubusercontent.com/mozilla-ai/any-llm/refs/heads/main/docs/src/content/docs/gateway/api-reference.md)
 - [Gateway - Troubleshooting](https://raw.githubusercontent.com/mozilla-ai/any-llm/refs/heads/main/docs/src/content/docs/gateway/troubleshooting.md)
 - [Gateway - Docker Deployment](https://raw.githubusercontent.com/mozilla-ai/any-llm/refs/heads/main/docs/src/content/docs/gateway/docker-deployment.md): curl http://localhost:8000/health
