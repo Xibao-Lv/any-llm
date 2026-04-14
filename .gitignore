@@ -218,3 +218,7 @@ __marimo__/
 service_account.json
 config.yml
 gateway.db
+
+
+# ignore test docker config
+docker/config.yml
