@@ -10,15 +10,15 @@ def test_aliyun_provider_initialization() -> None:
     assert provider.PROVIDER_NAME == "aliyun"
     assert provider.ENV_API_KEY_NAME == "ALIYUN_API_KEY"
     assert provider.ENV_API_BASE_NAME == "ALIYUN_API_BASE"
-    assert provider.API_BASE == "https://bailian.aliyun.com/v1/"
+    assert provider.API_BASE == "https://dashscope.aliyuncs.com/compatible-mode"
 
 
 def test_aliyun_supports_flags() -> None:
     """Test that AliyunProvider has correct feature support flags."""
     provider = AliyunProvider(api_key="dummy_key")
-    assert provider.SUPPORTS_COMPLETION_IMAGE is False
-    assert provider.SUPPORTS_COMPLETION_PDF is False
-    assert provider.SUPPORTS_EMBEDDING is False
+    assert provider.SUPPORTS_COMPLETION_IMAGE is True
+    assert provider.SUPPORTS_COMPLETION_PDF is True
+    assert provider.SUPPORTS_EMBEDDING is True
     assert provider.SUPPORTS_COMPLETION_REASONING is False
     # Default flags from BaseOpenAIProvider
     assert provider.SUPPORTS_COMPLETION_STREAMING is True
